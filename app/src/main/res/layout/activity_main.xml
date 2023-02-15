@@ -20,7 +20,8 @@
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="name"/>
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
@@ -33,7 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName7"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="name"/>
 
     <EditText
         android:id="@+id/editTextTextPersonName9"
@@ -41,7 +43,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Birthdate (DD/MM/YYY)"
-        android:inputType="textPersonName"
+        android:inputType="date"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,11 +60,13 @@
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="country"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="0dp"
+        android:backgroundTint="@color/grey"
         android:layout_height="wrap_content"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
